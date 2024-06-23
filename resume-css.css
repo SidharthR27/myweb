@@ -326,6 +326,9 @@ footer h3 {
     footer {
         width: 100%;
     }
+    .work-content {
+        max-width: 300px;
+    }
 
 
   }
