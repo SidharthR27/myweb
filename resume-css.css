@@ -222,7 +222,7 @@ p {
     /* background-color: grey; */
     display: flex;
     justify-content: space-around;
-    max-width: fit-content;
+    
 
 }
 
@@ -324,6 +324,7 @@ footer h3 {
     .writing-container {
         flex-direction: column;
         gap: 50px;
+        max-width: fit-content;
     }
     footer {
         width: 100%;
