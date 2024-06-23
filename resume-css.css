@@ -15,7 +15,8 @@ body {
 }
 
 img {
-    width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 
@@ -32,10 +33,11 @@ img {
     align-items: center;
     width: 150px;
     padding-bottom: 50px;
+    /* display: none; */
 
 }
 
-.dp {
+.dp-container {
     width: 100px;
     margin: 0 auto;
 
@@ -110,9 +112,10 @@ li a:hover {
 
 
 .main-content {
-    padding-left: 240px;
-    padding-top: 80px;
-    padding-right: 250px;
+    /* padding-left: 240px; */
+    /* padding-top: 80px; */
+    /* padding-right: 250px; */
+    width: 60%;
     margin: 0 auto;
     
     
@@ -150,33 +153,38 @@ h5 {
     box-shadow: 1px 1px 16px 4px rgba(234,234,108,.3);
 }
 
-.work-image {
+/* .work-image {
     width: 300px;
     height: 200px;
-}
+} */
 
 .work1-image {
     width: 300px;
-    height: 200px;
+    /* height: 200px; */
 }
 
 .work-content {
     padding: 16px ;
-    height: 200px;
+    /* height: 200px; */
     background-color: #0a2c3d;
 }
 .neetocode-link{
     padding: 30px ;
+    
 }
+
 .neetocode-link a{
     color:#eaea6c;
     padding: 8px;
     border-radius: 6px;
+    transition-property: padding;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(0.20, 1.00, 0.22, 1.00);
 }
 
 .neetocode-link a:hover{
-    /* background-color: rgb(23, 20, 20); */
     background-color: #0e171a;
+    padding: 8px 6%;
 }
 button{
     color:#eaea6c;
@@ -186,6 +194,8 @@ button{
     border-radius: 8px;
     margin: 0 auto;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 button:hover{
     background-color: #0a2c3d;
@@ -213,14 +223,14 @@ p {
 
 }
 
-.writing-image-container{
+/* .writing-image-container{
     width: 260px;
     height: 200px;
-}
+} */
 
 .writing-image{
     width: 260px;
-    height: 200px;
+    /* height: 200px; */
 }
 
 
@@ -236,14 +246,14 @@ p {
 }
 
 .image-dp-container {
-    width: 20px;
-    display: inline-block;
+    width: 22px;
+    /* display: inline-block; */
     
 }
 
 .image-dp{
     border-radius: 50%;
-    display: inline-block;
+    /* display: inline-block; */
 
 }
 
@@ -262,11 +272,15 @@ p {
     margin: 20px 0;
 }
 
-footer{
-    padding-left: 440px;
-    padding-right: 450px;
-    margin: 20px auto;
+hr {
     border-top: solid 1px rgb(133, 129, 129);
+}
+footer{
+    /* padding-left: 440px;
+    padding-right: 450px; */
+    width: 60%;
+    margin: 20px auto;
+    
 }
 
 footer ul {
@@ -289,3 +303,22 @@ footer h3 {
     padding: 20px;
     
 }
+
+@media screen and (max-width: 930px) {
+    .sidebar{
+        display: none;
+    }
+    .work1{
+        flex-direction: column;
+    }
+
+    .writing-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    footer {
+        width: 100%;
+    }
+
+
+  }
