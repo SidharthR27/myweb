@@ -305,6 +305,10 @@ footer h3 {
 }
 
 @media screen and (max-width: 930px) {
+    
+    .main-content{
+        width: 90%;
+    }
     .sidebar{
         display: none;
     }
