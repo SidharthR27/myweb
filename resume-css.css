@@ -222,7 +222,7 @@ p {
     /* background-color: grey; */
     display: flex;
     justify-content: space-around;
-    min-height: 740px;
+    min-width: 740px;
     
 
 }
