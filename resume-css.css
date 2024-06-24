@@ -317,6 +317,11 @@ footer h3 {
     .sidebar{
         display: none;
     }
+    .my-work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .work1{
         flex-direction: column;
     }
@@ -324,7 +329,8 @@ footer h3 {
     .writing-container {
         flex-direction: column;
         gap: 50px;
-        max-width: fit-content;
+        /* max-width: fit-content; */
+        align-items: center;
     }
     footer {
         width: 100%;
