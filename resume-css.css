@@ -332,6 +332,7 @@ footer h3 {
         gap: 50px;
         /* max-width: fit-content; */
         align-items: center;
+        min-width: none;
     }
     footer {
         width: 100%;
