@@ -98,7 +98,7 @@ const words = [
       input.setAttribute("disabled", "");
       button.setAttribute("disabled", "");
     }
-    if (boxCount >= 29) {
+    if (boxCount >= 29 && userInput!==word) {
       status.textContent = `Sorry You lose, the correct word was "${word}"`;
       input.setAttribute("disabled", "");
       button.setAttribute("disabled", "");
